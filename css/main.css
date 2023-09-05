@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content-container{
+    @apply container mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-2
+}
+.card-container{
+    @apply card w-96 bg-base-100 shadow-emerald-500 shadow-lg mx-auto my-2 p-2}
+.card-container figure{ @apply rounded-none}
+
+.card-container figure img{ @apply rounded-md h-[250px] w-full}
+
+.c-body{@apply card-body ml-6 p-0}
+
+.c-title{@apply card-title mt-6}
+.features{@apply list-decimal pl-1}
+.card-container hr{@apply m-5 border-[1px]}
+/* .card-btn-div{@apply card-actions justify-end} */
+.card-footer{@apply flex mx-6 justify-between items-center mb-4}
+.card-footer p{@apply card-title text-xl font-semibold mb-2}
+.card-footer span{@apply space-x-2}
+.card-footer button{@apply text-[#EB5757] bg-[#FEF7F7] p-5 rounded-full}
+
+/* modal section styles */
+.modals-box{@apply modal-box overflow-visible max-w-screen-md}
+.modal-btn-close{
+    @apply btn bg-red-400 text-white rounded-full  absolute -right-3 -top-3
+}
+
+.modal-details-container{
+    @apply flex justify-between gap-3 items-center
+}
+.description{@apply bg-rose-100 p-3 rounded-md w-full max-w-[50%] 
+    max-h-[500px]
+}
+.title{@apply font-bold text-lg}
+.pricing{
+    @apply flex justify-center items-center gap-4 w-full
+}
+.pricing p{
+    @apply p-2 bg-white rounded-md w-full h-[100px] text-center flex items-center font-bold
+}
+.pricing p:nth-child(1){
+    @apply text-green-600
+}
+.pricing p:nth-child(2){
+    @apply text-orange-600
+}
+.pricing p:nth-child(3){
+    @apply text-red-600
+}
+.feature{
+    @apply p-2 rounded-md flex justify-between text-[10px] font-semibold mt-2
+}
+.feature p{
+    @apply font-bold text-sm
+}
+.image-section{
+    @apply w-full max-w-[50%] p-3 border-2 rounded-md max-h-[500px]
+}
+.image-section img{
+    @apply w-full rounded-md
+}
+.image-section h1{
+    @apply text-xl font-bold text-center my-2
+}
+.image-section p{
+    @apply text-sm text-center my-2
+}
+.custom-bg{
+    background-color: blue;
+}
